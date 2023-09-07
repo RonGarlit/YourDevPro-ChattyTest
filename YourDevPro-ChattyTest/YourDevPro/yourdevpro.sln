@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yourdevpro", "yourdevpro\yourdevpro.csproj", "{B3D87865-601E-46E3-98B1-651D39FA2282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataInsertScripts", "DataInsertScripts", "{9D95799F-87EE-435A-A02D-093B239F0441}"
+	ProjectSection(SolutionItems) = preProject
+		DataInsertScripts\01-TESTED-CreateDatabaseSchemaAndInsertData-REV04.sql = DataInsertScripts\01-TESTED-CreateDatabaseSchemaAndInsertData-REV04.sql
+		DataInsertScripts\02-CreateSchemaOnly-REV04.sql = DataInsertScripts\02-CreateSchemaOnly-REV04.sql
+		DataInsertScripts\03-DataONLY-REV04.sql = DataInsertScripts\03-DataONLY-REV04.sql
+		DataInsertScripts\04-DropAndCreateSchemaOnly-REV04.sql = DataInsertScripts\04-DropAndCreateSchemaOnly-REV04.sql
+		..\..\Users\ronga\Documents\SQL Server Management Studio\DevProDb-AzureScript-REV01.sql = ..\..\Users\ronga\Documents\SQL Server Management Studio\DevProDb-AzureScript-REV01.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeShop.Domain", "BikeShop.Domain\BikeShop.Domain.csproj", "{AA75EEC4-9C26-471E-A941-20888942E28B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NOTES", "NOTES", "{0AAE295E-6D92-48FA-B4D5-6BDAD5A93010}"
+	ProjectSection(SolutionItems) = preProject
+		OriginalIdentityView.txt = OriginalIdentityView.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yourdevpro.Rest.v1", "yourdevpro.Rest.v1\yourdevpro.Rest.v1.csproj", "{7C42EE4E-9F44-45C0-8A7C-75C483F6DC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yourdevpro.Rest.v1.Test", "yourdevpro.Rest.v1.Test\yourdevpro.Rest.v1.Test.csproj", "{0C759DF0-CB0C-4EB8-BFFD-7533F1AFD845}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06BEA7D5-A997-4348-94BE-EAF179908136}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevPro.Pagination", "DevPro.Pagination\DevPro.Pagination.csproj", "{6F57E592-0B97-4028-8125-ADE81EAFE47C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D87865-601E-46E3-98B1-651D39FA2282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D87865-601E-46E3-98B1-651D39FA2282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D87865-601E-46E3-98B1-651D39FA2282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D87865-601E-46E3-98B1-651D39FA2282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA75EEC4-9C26-471E-A941-20888942E28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA75EEC4-9C26-471E-A941-20888942E28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA75EEC4-9C26-471E-A941-20888942E28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA75EEC4-9C26-471E-A941-20888942E28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C42EE4E-9F44-45C0-8A7C-75C483F6DC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C42EE4E-9F44-45C0-8A7C-75C483F6DC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C42EE4E-9F44-45C0-8A7C-75C483F6DC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C42EE4E-9F44-45C0-8A7C-75C483F6DC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C759DF0-CB0C-4EB8-BFFD-7533F1AFD845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C759DF0-CB0C-4EB8-BFFD-7533F1AFD845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C759DF0-CB0C-4EB8-BFFD-7533F1AFD845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C759DF0-CB0C-4EB8-BFFD-7533F1AFD845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F57E592-0B97-4028-8125-ADE81EAFE47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F57E592-0B97-4028-8125-ADE81EAFE47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F57E592-0B97-4028-8125-ADE81EAFE47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F57E592-0B97-4028-8125-ADE81EAFE47C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

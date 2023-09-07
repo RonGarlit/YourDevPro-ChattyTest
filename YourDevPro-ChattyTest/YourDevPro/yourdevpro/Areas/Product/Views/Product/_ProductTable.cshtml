@@ -1,0 +1,81 @@
+﻿@using DevPro.Pagination.PagedList.Mvc
+@model DevPro.Pagination.PagedList.PagedList<BikeShop.Domain.Product>
+<div>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+    <p class="bg-primary">Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)</p>
+
+    @*<p class="bg-primary">List of @Model.TotalItemCount Products (Page Size: @Model.PageSize, Current Page: @Model.PageNumber)</p>*@
+
+    <table class="table table-hover table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayName("Name")</th>
+                <th>@Html.DisplayName("Product Number")</th>
+                <th>@Html.DisplayName("Category")</th>
+                <th>@Html.DisplayName("List price")</th>
+                <th>@Html.DisplayName("Action")</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>
+                        @product.Name;
+                    </td>
+                    <td>
+                        @product.ProductNumber;
+                    </td>
+                    <td>
+                        @product.CategoryName;
+                    </td>
+                    <td>
+                        @product.ListPrice;
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = product.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = product.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = product.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+    <p class="bg-primary">Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)</p>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+
+
+</div>
+@*<h4>Default Paging Control</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+    <h4>Classic Paging Control (always shows Previous/Next links, but sometimes they are disabled)</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.Classic)
+
+    <h4>Classic Paging Control (Classic +First and Last links)</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+
+    <h4>Minimal Paging Control</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.Minimal)
+
+    <h4>Minimal Paging Control w/ Page Count Text</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.MinimalWithPageCountText)
+
+    <h4>Minimal Paging Control w/ Item Count Text</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.MinimalWithItemCountText)
+
+    <h4>Page Numbers Only</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.PageNumbersOnly)
+
+    <h4>Only Show Five Pages At A Time</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.OnlyShowFivePagesAtATime)
+
+    <h4>Custom Pager Configurations</h4>
+    <h4>Show Range of Items For Each Page</h4>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions { FunctionToDisplayEachPageNumber = page => ((page - 1) * Model.PageSize + 1).ToString() + "-" + (((page - 1) * Model.PageSize) + Model.PageSize).ToString(), MaximumPageNumbersToDisplay = 5 })*@

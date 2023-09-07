@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#DevelopmentInfo" aria-expanded="true" aria-controls="DevelopmentInfo">
+    View Development Info
+</button>
+<div class="row">
+    <div id="DevelopmentInfo" class="collapse">
+        <hr />
+        <h2><strong>Development Database Information</strong></h2>
+        <div class="col-md-6">
+            <h3><strong>BikeSHop basic table counts</strong></h3>
+            <p>
+                Data was generated using the AdventureWorks Database
+                and Red Gate's SQL Data Generator v3.0.
+            </p>
+            <p>
+                @*<strong>Current Number of Users:</strong> @ViewBag.UserCount*@
+            </p>
+            <p>
+                <strong>Current Number of Products:</strong> @ViewBag.ProductCount
+            </p>
+            <p>
+                <strong>Current Number of Vendors:</strong> @ViewBag.VenderCount
+            </p>
+   
+
+            <p>
+                @foreach (var category in ViewBag.CatArrayList)
+                {
+                <p>
+                    @category;
+                </p>
+
+                }
+
+                </p>
+
+
+
+            </div>
+        <div class="col-md-6">
+            <h3><strong>Identity Testing</strong></h3>
+            <p>TEST: Using Identity.UserId: @User.Identity.Name</p>
+            <p>TEST: Using Identity.Name: @User.Identity.Name </p>
+            <p>TEST: Using Identity.UserIsAdmin: @User.IsInRole("Admin") </p>
+            <p>TEST: Using Identity.UserIsSuperUser: @User.IsInRole("Superuser") </p>
+            <p>TEST: Using Identity.UserIsUser: @User.IsInRole("User") </p>
+        </div>
+        
+        
+        <div class="col-md-12">
+
+            <p>
+                @foreach (var item in ViewBag.ProductsListAll)
+                {
+                <p>
+                    @item;
+                </p>
+
+                }
+
+            </p>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,20 @@
+﻿@using System.Web.DynamicData
+@using BikeShop.Domain
+@using DevPro.Pagination
+@using DevPro.Pagination.PagedList
+@using DevPro.Pagination.PagedList.Mvc
+@*@model IEnumerable<BikeShop.Domain.Products>*@
+@*@model List<BikeShop.Domain.Product>*@
+@model DevPro.Pagination.PagedList.PagedList<BikeShop.Domain.Product>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 class="label label-primary">Product Maintenance</h3>
+@Html.Partial("_ProductTable", @Model)
+
+
+
+

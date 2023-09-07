@@ -1,0 +1,14 @@
+﻿@using System.Web.DynamicData
+@using BikeShop.Domain
+@using DevPro.Pagination
+@using DevPro.Pagination.PagedList
+@using DevPro.Pagination.PagedList.Mvc
+@model DevPro.Pagination.PagedList.PagedList<BikeShop.Domain.Error>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 class="label label-primary">Error Log and Maintenance</h3>
+@Html.Partial("_ErrorTable", @Model)
